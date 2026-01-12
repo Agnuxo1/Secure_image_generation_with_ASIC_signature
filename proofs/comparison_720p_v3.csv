@@ -1,0 +1,3 @@
+Device,Interface FPS,Entropy (bits),Internal Hash/Joule,Efficiency Factor,Paradigm
+CPU (i7-10700K Approx),104.66812513975556,7.944579820805598,21052.63157894737,1.0,Pseudo-Random
+ASIC (Antminer S9),6.011559387118405,7.413658926218869,11230769230.76923,533461.5384615384,Hardware Physics
