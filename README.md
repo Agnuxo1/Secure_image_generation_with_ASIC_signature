@@ -152,6 +152,37 @@ A painted-shapes attack removing ~20% of pixels still allowed full signature rec
 
 ---
 
+![1](https://github.com/user-attachments/assets/a06234b2-cf8e-4642-8eca-9b6eb5eea76c)
+![3](https://github.com/user-attachments/assets/357151a2-5622-4ac2-b084-ce889be9fe2f)
+![2](https://github.com/user-attachments/assets/40e75276-da50-4c46-be3b-24ff51cde353)
+![5](https://github.com/user-attachments/assets/5ec9a3e5-da78-4736-82cf-b18269d716ca)
+![4](https://github.com/user-attachments/assets/a93aba07-d0b0-4f7b-b50e-e1e1c8e55f8b)
+![7](https://github.com/user-attachments/assets/ca50c0fa-c169-4edf-9208-5425d7e0c027)
+![6](https://github.com/user-attachments/assets/7037f67e-f0e7-4cf4-95ad-b78dca14a133)
+![9](https://github.com/user-attachments/assets/07c369ec-ec6f-4c46-ae21-dcc03abe6d04)
+![8](https://github.com/user-attachments/assets/f642ef98-eba8-4cca-b2d3-3f657edc4c4b)
+![11](https://github.com/user-attachments/assets/86d2116d-c9ed-4eff-b20e-212afc5c5ece)
+![10](https://github.com/user-attachments/assets/e44c122b-eecb-40e4-8fd9-2c20dbbae9a9)
+![13](https://github.com/user-attachments/assets/f95deba5-0119-4953-8eb0-9e74c8fabb21)
+![12](https://github.com/user-attachments/assets/c6cdbaec-80ad-47e4-9d23-8d6de54d99d8)
+![15](https://github.com/user-attachments/assets/3a0b8b17-d460-4b9d-b301-fcf4830c0662)
+![14](https://github.com/user-attachments/assets/c8f7cce4-267f-4057-b6b5-a09af2bc16fb)
+![16](https://github.com/user-attachments/assets/087ec269-a36a-4fe7-904a-27b9e5a9c6d0)
+![17](https://github.com/user-attachments/assets/803e289f-eb6b-4625-9baa-33ef50881277)
+![18](https://github.com/user-attachments/assets/af28e595-e527-4510-951c-a77ac854edcd)
+![19](https://github.com/user-attachments/assets/8aa0f59f-b868-4179-9c0d-4d4a0694ef19)
+![20](https://github.com/user-attachments/assets/b40e287f-4eca-48b5-9261-adc7456f15d7)
+![22](https://github.com/user-attachments/assets/fa9e8185-c02f-4571-8680-965704fe6da9)
+![21](https://github.com/user-attachments/assets/8059097f-811b-4d63-af54-8c7f22e15aa2)
+![24](https://github.com/user-attachments/assets/003289e3-3d5f-47e9-948d-e6f73b5e46d2)
+![23](https://github.com/user-attachments/assets/fbc0df0c-f634-4965-9e54-9f5defe282ea)
+![25](https://github.com/user-attachments/assets/9baa1c2b-cdf8-490d-bbdd-777756417ace)
+![27](https://github.com/user-attachments/assets/dc93e7ae-d216-47f7-be1d-43e16e7d1492)
+![26](https://github.com/user-attachments/assets/d8990dcc-812c-4b2f-9777-1f66e2d25c02)
+![29](https://github.com/user-attachments/assets/b6b210da-9467-4d87-a237-3e37b17e1b0c)
+![28](https://github.com/user-attachments/assets/e7cae796-cf4d-4cd2-8f7e-f7620cc62d5d)
+
+
 ## 🧪 Usage (Quick Start)
 
 Run the repository scripts with Python 3:
