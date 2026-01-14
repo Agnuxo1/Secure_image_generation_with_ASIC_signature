@@ -1,0 +1,59 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+.pytest_cache/
+.coverage
+coverage.xml
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environments
+env/
+venv/
+.venv/
+
+# Secrets and credentials
+.env
+.env.*
+secrets.env
+credentials
+*.pem
+*.key
+*.crt
+
+# Misc
+*.log
+*.sqlite3
+*.db
+
+# Dataset archives (optional - include if you don't want to track large dataset files)
+# datasets/*.tar.gz
+# datasets/*.zip
