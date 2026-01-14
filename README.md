@@ -1,5 +1,7 @@
 # Secure Image Generation with ASIC Signature ✅
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE) [![GitHub Release](https://img.shields.io/github/v/release/Agnuxo1/Secure_image_generation_with_ASIC_signature)](https://github.com/Agnuxo1/Secure_image_generation_with_ASIC_signature/releases) [![CI](https://github.com/Agnuxo1/Secure_image_generation_with_ASIC_signature/actions/workflows/benchmarks.yml/badge.svg)](https://github.com/Agnuxo1/Secure_image_generation_with_ASIC_signature/actions)
+
 **Based on:** Robust ASIC-Based Image Authentication Using Reed–Solomon LSB Watermarking: A Hardware-Bound Proof-of-Work Approach
 
 **Author:** Francisco Angulo de Lafuente — Independent Researcher, Spain
