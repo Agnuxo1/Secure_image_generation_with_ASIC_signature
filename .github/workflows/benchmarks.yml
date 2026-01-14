@@ -1,0 +1,39 @@
+name: Benchmarks
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  run-benchmarks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install Pillow
+
+      - name: Run Benchmarks
+        run: |
+          python benchmarks/run_benchmarks.py
+
+      - name: Upload results artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: benchmark-results
+          path: benchmarks/results.json
+
+      - name: Upload to W&B (if WANDB_API_KEY)
+        if: ${{ secrets.WANDB_API_KEY != '' }}
+        env:
+          WANDB_API_KEY: ${{ secrets.WANDB_API_KEY }}
+        run: |
+          pip install wandb
+          python tools/upload_to_wandb.py
