@@ -220,6 +220,14 @@ Francisco Angulo de Lafuente — Independent Researcher
 
 ---
 
+## 📖 How to cite
+
+Please use the `CITATION.cff` file in this repository or cite as:
+
+Francisco Angulo de Lafuente (2026). Secure Image Generation with ASIC Signature. GitHub repository, v1.0.0. https://github.com/Agnuxo1/Secure_image_generation_with_ASIC_signature
+
+---
+
 ## 📝 License
 
 Open-source project — add or specify a `LICENSE` file to indicate the desired license.
