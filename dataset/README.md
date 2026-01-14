@@ -4,7 +4,7 @@ Contents:
 - `Originals/` — example input images used for embedding and testing.
 - `proofs/` — processed images, comparison CSVs and example outputs used in the paper experiments.
 
-License: Creative Commons Attribution 4.0 (CC-BY 4.0)
+License: Creative Commons Attribution 4.0 International (CC BY 4.0) — https://creativecommons.org/licenses/by/4.0/
 
 Usage notes:
 - The dataset is provided for benchmarking and reproducible experiments.
