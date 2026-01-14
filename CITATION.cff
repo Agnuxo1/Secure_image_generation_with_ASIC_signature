@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software or dataset, please cite it as below."
+title: "Secure Image Generation with ASIC Signature"
+version: "v1.0.0"
+doi: ""
+authors:
+  - family-names: "Angulo de Lafuente"
+    given-names: "Francisco"
+    orcid: ""
+    affiliation: "Independent Researcher, Spain"
+date-released: "2026-01-14"
+url: "https://github.com/Agnuxo1/Secure_image_generation_with_ASIC_signature"
+license: "MIT"
+abstract: |
+  This project implements an image authentication system combining ASIC-based
+  proof-of-work with Reed–Solomon protected LSB steganography. The implementation
+  and dataset are published open-source to support benchmarking and reproducible research.
