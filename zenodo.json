@@ -1,0 +1,10 @@
+{
+  "title": "Secure Image Generation with ASIC Signature",
+  "upload_type": "software",
+  "description": "Implementation and dataset for 'Robust ASIC-Based Image Authentication Using Reed–Solomon LSB Watermarking' by Francisco Angulo de Lafuente.",
+  "creators": [
+    { "name": "Francisco Angulo de Lafuente", "affiliation": "Independent Researcher, Spain" }
+  ],
+  "keywords": ["ASIC", "Proof-of-Work", "Image Authentication", "Reed-Solomon", "LSB Steganography"],
+  "license": "CC-BY-4.0"
+}
