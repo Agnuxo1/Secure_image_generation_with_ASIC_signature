@@ -1,10 +1,97 @@
-# Secure Image Generation with ASIC Signature ✅
+# <div align="center">🔏 SiliconSignature</div>
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE) [![GitHub Release](https://img.shields.io/github/v/release/Agnuxo1/Secure_image_generation_with_ASIC_signature)](https://github.com/Agnuxo1/Secure_image_generation_with_ASIC_signature/releases) [![CI](https://github.com/Agnuxo1/Secure_image_generation_with_ASIC_signature/actions/workflows/benchmarks.yml/badge.svg)](https://github.com/Agnuxo1/Secure_image_generation_with_ASIC_signature/actions)
+<div align="center">
 
-**Based on:** Robust ASIC-Based Image Authentication Using Reed–Solomon LSB Watermarking: A Hardware-Bound Proof-of-Work Approach
+**Hardware-Bound Image Authentication for the AI Era**
 
-**Author:** Francisco Angulo de Lafuente — Independent Researcher, Spain
+*Prove image provenance with ASIC proof-of-work and Reed-Solomon watermarking*
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-00ff88.svg?style=for-the-badge)](LICENSE)
+[![Paper](https://img.shields.io/badge/Paper-PDF-ff6b6b.svg?style=for-the-badge)](./Robust%20ASIC-Based%20Image%20Authentication%20Using%20Reed-Solomon%20LSB%20Watermarking.pdf)
+[![Web](https://img.shields.io/badge/Web-Live-ff6b6b.svg?style=for-the-badge)](https://silicon.p2pclaw.com)
+[![PWA](https://img.shields.io/badge/PWA-Installable-00ccff.svg?style=for-the-badge)](https://silicon.p2pclaw.com)
+
+[![Go](https://img.shields.io/badge/Go-CLI-00ADD8.svg?style=flat-square&logo=go)](https://github.com/Agnuxo1/siliconsignature-go)
+[![Rust](https://img.shields.io/badge/Rust-Library-000000.svg?style=flat-square&logo=rust)](https://github.com/Agnuxo1/siliconsignature-rust)
+[![TypeScript](https://img.shields.io/badge/TypeScript-npm-3178C6.svg?style=flat-square&logo=typescript)](https://github.com/Agnuxo1/siliconsignature-ts)
+[![Android](https://img.shields.io/badge/Android-APK-3DDC84.svg?style=flat-square&logo=android)](https://github.com/Agnuxo1/silicon-android)
+[![ComfyUI](https://img.shields.io/badge/ComfyUI-Node-1f6feb.svg?style=flat-square&logo=comfyui)](https://github.com/Agnuxo1/silicon-comfyui-node)
+[![A1111](https://img.shields.io/badge/A1111-Script-ff9d00.svg?style=flat-square&logo=stable-diffusion)](https://github.com/Agnuxo1/silicon-a1111-script)
+[![Browser](https://img.shields.io/badge/Browser-Extension-4285F4.svg?style=flat-square&logo=google-chrome)](https://github.com/Agnuxo1/silicon-browser-extension)
+
+</div>
+
+---
+
+## 🚨 The Problem
+
+| Threat | Current Solutions | Why They Fail |
+|--------|----------------|---------------|
+| **Deepfakes** | Detection algorithms | Reactive — find fakes *after* creation |
+| **Image forgery** | EXIF metadata | Stripped in 1 click |
+| **AI watermarking** | C2PA, SynthID | Trusts corporations; removable |
+| **NFT provenance** | Blockchain tokens | Just a URL, not the image |
+
+**SiliconSignature is different.** We embed **unforgeable proof-of-work** directly into the image pixels — bound to a physical ASIC chip. No corporation to trust. No metadata to strip. No blockchain needed.
+
+---
+
+## ⚡ How It Works
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    SIGN AN IMAGE                              │
+│                                                               │
+│   1. SHA-256 hash of image bytes                              │
+│   2. Search for nonce via ASIC proof-of-work                 │
+│   3. Reed-Solomon ECC encodes (hash + nonce + metadata)       │
+│   4. Embed in LSB of RGB channels (offset 0x20)               │
+│   5. Magic header "SSv1" + 5× redundancy                      │
+│                                                               │
+│   Result: Image looks identical. But pixels carry proof.      │
+└─────────────────────────────────────────────────────────────┘
+                              ↓
+┌─────────────────────────────────────────────────────────────┐
+│                   VERIFY AN IMAGE                             │
+│                                                               │
+│   1. Extract LSB from RGB channels                            │
+│   2. Decode Reed-Solomon (tolerates 40% pixel loss)           │
+│   3. Validate nonce via SHA-256 check                         │
+│   4. Confirm ASIC work was performed                            │
+│                                                               │
+│   Result: Authentic or Tampered. Binary. No grey area.       │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 🎯 Compared to Alternatives
+
+| | **SiliconSignature** | **C2PA (Adobe)** | **SynthID (Google)** | **NFT** |
+|---|:---:|:---:|:---:|:---:|
+| **Open Source** | ✅ MIT | ❌ Corporate | ❌ Corporate | Varies |
+| **No Dependencies** | ✅ Pure code | ❌ Ecosystem | ❌ API | ❌ Blockchain |
+| **Survives editing** | ✅ 40% pixels | ⚠️ Metadata only | ⚠️ Compression | ❌ None |
+| **Hardware-bound** | ✅ ASIC PoW | ❌ No | ❌ No | ❌ No |
+| **Cost to forge** | **$10,000+** | $0 (strip metadata) | $0 (remove sig) | $0 (screenshot) |
+| **Verification** | ✅ Offline | ❌ Needs Adobe | ❌ Needs Google | ❌ Needs blockchain |
+
+---
+
+## 🏗️ Ecosystem
+
+This repository is the **central hub** — the original Python implementation + research paper. The ecosystem extends across 8 specialized repositories:
+
+| Component | Language | Repository | Description |
+|-----------|----------|------------|-------------|
+| **PWA** | HTML/JS | [siliconsignature-web](https://github.com/Agnuxo1/siliconsignature-web) | Browser-based sign & verify |
+| **CLI** | Go | [siliconsignature-go](https://github.com/Agnuxo1/siliconsignature-go) | Command-line tool + serverless |
+| **Library** | Rust | [siliconsignature-rust](https://github.com/Agnuxo1/siliconsignature-rust) | Rust + WASM bindings |
+| **Package** | TypeScript | [siliconsignature-ts](https://github.com/Agnuxo1/siliconsignature-ts) | npm package for Node/Browser |
+| **Mobile** | Kotlin | [silicon-android](https://github.com/Agnuxo1/silicon-android) | Android camera app |
+| **ComfyUI** | Python | [silicon-comfyui-node](https://github.com/Agnuxo1/silicon-comfyui-node) | Custom node for ComfyUI |
+| **A1111** | Python | [silicon-a1111-script](https://github.com/Agnuxo1/silicon-a1111-script) | Script for AUTOMATIC1111 |
+| **Browser** | JS | [silicon-browser-extension](https://github.com/Agnuxo1/silicon-browser-extension) | Chrome/Firefox extension |
 
 ---
 
@@ -31,6 +118,7 @@ Image authentication methods based on metadata (EXIF or PNG text chunks) are eas
 - LSB steganography engine with configurable redundancy.
 - Validation framework demonstrating 30–40% damage tolerance.
 - Open-source implementation ready for deployment.
+- Multi-platform ecosystem (PWA, CLI, Libraries, Mobile, Browser extensions).
 
 ---
 
@@ -63,7 +151,7 @@ The pipeline consists of four components:
 3. **RS Encoder:** encodes the signature payload using Reed–Solomon over GF(2^8).
 4. **LSB Embedder:** writes the encoded, repeated signature into LSBs across the image channels.
 
-Diagram: Image SHA-256 → ASIC Bridge (BM1387 PoW) → RS Encoder → LSB Embedder (×repeats) → Output
+**Diagram:** Image SHA-256 → ASIC Bridge (BM1387 PoW) → RS Encoder → LSB Embedder (×repeats) → Output
 
 ---
 
@@ -141,7 +229,7 @@ A painted-shapes attack removing ~20% of pixels still allowed full signature rec
 | Signature forgery | Hardware-bound PoW | Computationally infeasible |
 | LSB destruction | 5× redundancy | Survives partial destruction |
 
-**Limitations:** JPEG lossy compression and resizing destroy embedded LSB payloads; ASIC dependence (software-only simulation mode could be added for testing).
+**Limitations:** JPEG lossy compression and resizing destroy embedded LSB payloads; ASIC dependence (software-only simulation mode available in the [PWA](https://silicon.p2pclaw.com)).
 
 ---
 
@@ -149,58 +237,63 @@ A painted-shapes attack removing ~20% of pixels still allowed full signature rec
 
 - Support Extranonce2 embedding for full PoW verification without metadata.
 - Implement a full Berlekamp–Massey decoder to improve error correction.
-- Add support for video frame authentication and a mobile verification app.
-- Provide a software-mode for systems without ASIC hardware.
+- Add support for video frame authentication.
+- Expand mobile verification via the [Android app](https://github.com/Agnuxo1/silicon-android).
+- Integrate with popular image generators (ComfyUI, A1111, Fooocus, InvokeAI).
 
 ---
-
-![1](https://github.com/user-attachments/assets/a06234b2-cf8e-4642-8eca-9b6eb5eea76c)
-![3](https://github.com/user-attachments/assets/357151a2-5622-4ac2-b084-ce889be9fe2f)
-![2](https://github.com/user-attachments/assets/40e75276-da50-4c46-be3b-24ff51cde353)
-![5](https://github.com/user-attachments/assets/5ec9a3e5-da78-4736-82cf-b18269d716ca)
-![4](https://github.com/user-attachments/assets/a93aba07-d0b0-4f7b-b50e-e1e1c8e55f8b)
-![7](https://github.com/user-attachments/assets/ca50c0fa-c169-4edf-9208-5425d7e0c027)
-![6](https://github.com/user-attachments/assets/7037f67e-f0e7-4cf4-95ad-b78dca14a133)
-![9](https://github.com/user-attachments/assets/07c369ec-ec6f-4c46-ae21-dcc03abe6d04)
-![8](https://github.com/user-attachments/assets/f642ef98-eba8-4cca-b2d3-3f657edc4c4b)
-![11](https://github.com/user-attachments/assets/86d2116d-c9ed-4eff-b20e-212afc5c5ece)
-![10](https://github.com/user-attachments/assets/e44c122b-eecb-40e4-8fd9-2c20dbbae9a9)
-![13](https://github.com/user-attachments/assets/f95deba5-0119-4953-8eb0-9e74c8fabb21)
-![12](https://github.com/user-attachments/assets/c6cdbaec-80ad-47e4-9d23-8d6de54d99d8)
-![15](https://github.com/user-attachments/assets/3a0b8b17-d460-4b9d-b301-fcf4830c0662)
-![14](https://github.com/user-attachments/assets/c8f7cce4-267f-4057-b6b5-a09af2bc16fb)
-![16](https://github.com/user-attachments/assets/087ec269-a36a-4fe7-904a-27b9e5a9c6d0)
-![17](https://github.com/user-attachments/assets/803e289f-eb6b-4625-9baa-33ef50881277)
-![18](https://github.com/user-attachments/assets/af28e595-e527-4510-951c-a77ac854edcd)
-![19](https://github.com/user-attachments/assets/8aa0f59f-b868-4179-9c0d-4d4a0694ef19)
-![20](https://github.com/user-attachments/assets/b40e287f-4eca-48b5-9261-adc7456f15d7)
-![22](https://github.com/user-attachments/assets/fa9e8185-c02f-4571-8680-965704fe6da9)
-![21](https://github.com/user-attachments/assets/8059097f-811b-4d63-af54-8c7f22e15aa2)
-![24](https://github.com/user-attachments/assets/003289e3-3d5f-47e9-948d-e6f73b5e46d2)
-![23](https://github.com/user-attachments/assets/fbc0df0c-f634-4965-9e54-9f5defe282ea)
-![25](https://github.com/user-attachments/assets/9baa1c2b-cdf8-490d-bbdd-777756417ace)
-![27](https://github.com/user-attachments/assets/dc93e7ae-d216-47f7-be1d-43e16e7d1492)
-![26](https://github.com/user-attachments/assets/d8990dcc-812c-4b2f-9777-1f66e2d25c02)
-![29](https://github.com/user-attachments/assets/b6b210da-9467-4d87-a237-3e37b17e1b0c)
-![28](https://github.com/user-attachments/assets/e7cae796-cf4d-4cd2-8f7e-f7620cc62d5d)
-
 
 ## 🧪 Usage (Quick Start)
 
 Run the repository scripts with Python 3:
 
-- Embed signature: `python silicon_signature_engine.py <image>`
-- Verify signature: `python verify_silicon_art.py <image>`
-- Simulate damage & recovery: `python simulate_damage.py <image>`
-- Utilities: `manual_png_check.py`, `silicon_rs_watermark.py`, `asic_auth_portal.py`
+- **Embed signature:** `python silicon_signature_engine.py <image>`
+- **Verify signature:** `python verify_silicon_art.py <image>`
+- **Simulate damage & recovery:** `python simulate_damage.py <image>`
+- **Utilities:** `manual_png_check.py`, `silicon_rs_watermark.py`, `asic_auth_portal.py`
 
-See source code for CLI options and configuration parameters.
+For browser-based signing (no Python/ASIC required), use the **[Live PWA](https://silicon.p2pclaw.com)**.
+
+---
+
+## 📁 Repository Contents
+
+```
+Secure_image_generation_with_ASIC_signature/
+├── asic_auth_portal.py              # ASIC authentication portal
+├── silicon_signature_engine.py      # Core signing engine
+├── verify_silicon_art.py            # Verification tool
+├── silicon_rs_watermark.py          # Reed-Solomon watermark module
+├── silicon_fog_analyzer.py          # Fog/lighting analyzer
+├── silicon_fog_v4_session.py        # Session management
+├── simulate_damage.py               # Damage simulation tests
+├── manual_png_check.py              # PNG validation utility
+├── Robust ASIC-Based Image          # Full research paper (PDF)
+│   Authentication Using
+│   Reed-Solomon LSB Watermarking.pdf
+├── ASIC_Signature_Paper.html        # HTML version of paper
+├── Secure_image_generation_with     # Interactive HTML demo
+│   ASIC_signature.html
+├── benchmarks/                      # Performance benchmarks
+├── dataset/                         # Test image datasets
+├── docs/                            # Documentation
+├── drivers/                         # ASIC drivers
+├── Originals/                       # Original test images
+├── proofs/                          # Verification proofs
+├── tools/                           # Additional tools
+├── .github/workflows/               # CI/CD workflows
+├── CITATION.cff                     # Citation metadata
+├── LICENSE                          # MIT License
+├── SECURITY.md                      # Security policy
+├── zenodo.json                      # Zenodo metadata
+└── README.md                        # This file
+```
 
 ---
 
 ## 📚 References
 
-Selected references from the original manuscript (not exhaustive):
+Selected references from the original manuscript:
 - Katzenbeisser & Petitcolas, Information Hiding Techniques for Steganography and Digital Watermarking, 2000.
 - Nakamoto, Bitcoin: A Peer-to-Peer Electronic Cash System, 2008.
 - Reed & Solomon, Polynomial Codes Over Certain Finite Fields, 1960.
@@ -211,27 +304,32 @@ Selected references from the original manuscript (not exhaustive):
 
 ## 🧑‍💻 Author & Contact
 
-Francisco Angulo de Lafuente — Independent Researcher
+**Francisco Angulo de Lafuente** — Independent Researcher, Spain
 
 - GitHub: https://github.com/Agnuxo1
 - ResearchGate: https://www.researchgate.net/profile/Francisco-Angulo-Lafuente-3
 - Kaggle: https://www.kaggle.com/franciscoangulo
 - Hugging Face: https://huggingface.co/Agnuxo
+- ORCID: 0009-0001-1634-7063
 
 ---
 
-## 📖 How to cite
+## 📖 How to Cite
 
 Please use the `CITATION.cff` file in this repository or cite as:
 
-Francisco Angulo de Lafuente (2026). Secure Image Generation with ASIC Signature. GitHub repository, v1.0.0. https://github.com/Agnuxo1/Secure_image_generation_with_ASIC_signature
+> Francisco Angulo de Lafuente (2026). *Secure Image Generation with ASIC Signature*. GitHub repository, v1.0.0. https://github.com/Agnuxo1/Secure_image_generation_with_ASIC_signature
 
 ---
 
 ## 📝 License
 
-Open-source project — add or specify a `LICENSE` file to indicate the desired license.
+[MIT License](LICENSE) © 2026 Francisco Angulo de Lafuente
 
 ---
 
-If you want, I can also add a robust `.gitignore`, remove `__pycache__` entries from history, or remove large files before pushing a cleaned history. ✨
+<div align="center">
+
+**[🌐 Live PWA](https://silicon.p2pclaw.com) · [📄 Paper](https://github.com/Agnuxo1/Secure_image_generation_with_ASIC_signature/blob/main/Robust%20ASIC-Based%20Image%20Authentication%20Using%20Reed-Solomon%20LSB%20Watermarking.pdf) · [🐛 Issues](https://github.com/Agnuxo1/Secure_image_generation_with_ASIC_signature/issues)**
+
+</div>
