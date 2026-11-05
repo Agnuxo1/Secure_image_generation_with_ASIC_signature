@@ -1,5 +1,16 @@
+<!--
+Project: Secure Image Generation with ASIC Signature
+Author: Francisco Angulo de Lafuente
+ORCID: https://orcid.org/0009-0001-1634-7063
+Copyright: 2026 Francisco Angulo de Lafuente
+Recorded on: 2026-11-05
+SPDX-License-Identifier: MIT
+-->
+
 # MANIFIESTO DE AUTENTICIDAD DE SILICIO: PROOF-OF-ART
 ===================================================
+
+**Author:** [Francisco Angulo de Lafuente](https://orcid.org/0009-0001-1634-7063)
 
 ## La Visión de la Soberanía Física
 Este archivo documenta un hito funcional en la generación de imágenes digitales: la capacidad de diferenciar, mediante la estructura del ruido ("niebla determinista"), una imagen generada por un hardware específico (ASIC SHA-256) de cualquier otro método de creación (IA de Difusión, Fotografía o Renderizado CPU).
@@ -23,3 +34,5 @@ Hemos demostrado que es posible generar arte que no solo es estéticamente únic
 **Generado y Verificado por AntiGravity & BM1387 Silicon Architecture.**
 *Fecha: Enero 2026*
 *Ubicación: D:\ASIC-ANTMINER_S9\ASIC_DIFFUSION_Art_Research_Memo\Secure_image_generation_with_ASIC_signature*
+
+**Citation and reuse:** Cite the project through CITATION.cff; see LICENSE and provenance.json for the applicable scope.

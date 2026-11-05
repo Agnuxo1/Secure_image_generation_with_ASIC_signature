@@ -1,0 +1,645 @@
+{
+  "schema_version": 1,
+  "project": "Secure Image Generation with ASIC Signature",
+  "author": {
+    "name": "Francisco Angulo de Lafuente",
+    "orcid": "https://orcid.org/0009-0001-1634-7063"
+  },
+  "recorded_on": "2026-11-05",
+  "canonical_url": "https://github.com/Agnuxo1/Secure_image_generation_with_ASIC_signature",
+  "github": {
+    "repository_id": 1133066302,
+    "owner_login": "Agnuxo1",
+    "owner_id": 166046035,
+    "visibility": "public",
+    "default_branch": "main"
+  },
+  "baseline": {
+    "commit": "a85a3d431eaeef3293ec6e38f720c5f6005194d8",
+    "tree": "a1159d68d196b2551252f48096cf7cb9dc33c9b6",
+    "tag": "v1.0.0",
+    "tag_target": "147e69b05824aaef07156c68f4676bd8b2bf6138",
+    "original_tracked_paths": 40,
+    "passage_hashes": [
+      {
+        "path": "silicon_signature_engine.py",
+        "start_line": 19,
+        "end_line": 27,
+        "sha256_lf_utf8": "f48c3a65ae55926b5664cacb3a0753720739b2b439fa2ab91a1b186c7ea38500"
+      },
+      {
+        "path": "silicon_rs_watermark.py",
+        "start_line": 122,
+        "end_line": 130,
+        "sha256_lf_utf8": "155bf4e0dd68ea16dba8411db1547eb9b5a6673b3c95abcc0b366729f0f3587b"
+      },
+      {
+        "path": "verify_silicon_art.py",
+        "start_line": 31,
+        "end_line": 39,
+        "sha256_lf_utf8": "575abae62fedb9fa3f298b80fe1c6cd0ea694f55577f03807e0901958df3b1ff"
+      },
+      {
+        "path": "drivers/asic_interface.py",
+        "start_line": 401,
+        "end_line": 409,
+        "sha256_lf_utf8": "de3063a93d7d3358ad47a7a616aa0e14d6f3cfa9955b48240457fc43c30015b4"
+      },
+      {
+        "path": "README.md",
+        "start_line": 98,
+        "end_line": 103,
+        "sha256_lf_utf8": "0974614980d96c0dbba2d9ea483943975692fcd2d85be0e4bc2c957866a0115a"
+      },
+      {
+        "path": "SILICON_AUTH_HANDBOOK.md",
+        "start_line": 5,
+        "end_line": 10,
+        "sha256_lf_utf8": "f2c39752520caf20e39ef5e9d2e957680fb09e5573d16b8cdf83e2877e316bfe"
+      }
+    ]
+  },
+  "identity_basis": {
+    "git_author_name": "Francisco Angulo de Lafuente",
+    "github_author_login": "Agnuxo1",
+    "github_author_id": 166046035,
+    "account_identity_confirmed_by_user": true
+  },
+  "license_scope": [
+    {
+      "scope": "verified first-party source code and project documentation, excluding bot-authored README portions",
+      "license": "MIT",
+      "basis": "Existing root LICENSE authored by Francisco; no new LICENSE created."
+    },
+    {
+      "scope": "dataset designation in dataset/README.md",
+      "license": "CC-BY-4.0",
+      "basis": "Existing dataset-specific notice; rights/source of included media were not independently verified."
+    },
+    {
+      "scope": "PDF, images, proof CSV/PNG, CAJAL Bot and P2PCLAW Bot files",
+      "license": "unresolved or separate; unchanged",
+      "basis": "No new authorship or broader licensing claim added."
+    }
+  ],
+  "mixed_authorship": {
+    "README.md": {
+      "francisco_lines": 186,
+      "cajal_bot_lines": 149,
+      "bot_commit": "7fe1b4a06ec9d2bdec63ccf18e91b55af35330ee"
+    },
+    "ECOSYSTEM.md": {
+      "author": "CAJAL Bot",
+      "commit": "ba25f05070ed43e762e72f868ab8d2327fb5335f",
+      "changed": false
+    },
+    ".github/FUNDING.yml": {
+      "author": "P2PCLAW Bot",
+      "commit": "a85a3d431eaeef3293ec6e38f720c5f6005194d8",
+      "changed": false
+    }
+  },
+  "contest_rules": {
+    "status": "not_applicable",
+    "finding": "No repository-specific contest or competition entry identified in tracked paths or reviewed commit subjects; no contest rules applicable."
+  },
+  "privacy_review": {
+    "baseline_tracked_text_files_scanned": 33,
+    "final_text_files_scanned": 34,
+    "common_email_or_token_pattern_matches": 0,
+    "method_limit": "Static pattern scan only; not a complete security audit."
+  },
+  "workflow": {
+    "file": ".github/workflows/benchmarks.yml",
+    "trigger": "workflow_dispatch only",
+    "optional_external_service": "Weights & Biases upload when WANDB_API_KEY is configured",
+    "executed": false
+  },
+  "validation": {
+    "tests": "No test suite or build configuration found. No runtime, upload helper, hardware code, or workflow executed.",
+    "static_checks": "Python AST/compile, Markdown render, CFF/JSON/YAML checks, exact reconstruction, git diff --check, and anonymous remote tree verification."
+  },
+  "files": [
+    {
+      "path": ".github/FUNDING.yml",
+      "git_mode": "100644",
+      "original_blob_oid": "63650d23d46324739eac61583f13c4041a61a334",
+      "original_sha256": "ca5ee9ee957dd9a643d4ae9d47070a5729d188799fa7fa726283350b1f9f803f",
+      "original_bytes": 100,
+      "first_commit": "a85a3d4",
+      "first_author": "P2PCLAW Bot",
+      "last_commit": "a85a3d4",
+      "last_author": "P2PCLAW Bot",
+      "attribution_status": "bot_authored_preserved",
+      "decision": "Git history attributes this file to a bot, not Francisco."
+    },
+    {
+      "path": ".github/workflows/benchmarks.yml",
+      "git_mode": "100644",
+      "original_blob_oid": "92b7633f6753c8de871e81087de791930d9391bb",
+      "original_sha256": "231444e376b7b0f3ee0bf2c53ea88d370472be2f3586719947a5f98b9e5ac672",
+      "original_bytes": 912,
+      "first_commit": "851c74a",
+      "first_author": "Francisco Angulo de Lafuente",
+      "last_commit": "851c74a",
+      "last_author": "Francisco Angulo de Lafuente",
+      "attribution_status": "attribution_added",
+      "decision": "Additive author/copyright/ORCID/SPDX header; original body preserved."
+    },
+    {
+      "path": ".gitignore",
+      "git_mode": "100644",
+      "original_blob_oid": "bb8db8f5b7f6209f2c61853bddfb724afb9208d4",
+      "original_sha256": "bf61452fa99a5473e11efb4abd87a5fb4ced5f82a16851c43333800ea8d274d0",
+      "original_bytes": 708,
+      "first_commit": "3ef4049",
+      "first_author": "Francisco Angulo de Lafuente",
+      "last_commit": "3ef4049",
+      "last_author": "Francisco Angulo de Lafuente",
+      "attribution_status": "attribution_added",
+      "decision": "Additive author/copyright/ORCID/SPDX header; original body preserved."
+    },
+    {
+      "path": "ASIC_Signature_Paper.html",
+      "git_mode": "100644",
+      "original_blob_oid": "8f9aead168cbda53002e0ddd5e45a8d07be7f394",
+      "original_sha256": "42774863cf845d4fceb3bf15e8c59192cd6e28a4b7139f9a71a7f1f6be8094f2",
+      "original_bytes": 25507,
+      "first_commit": "2d7afb8",
+      "first_author": "Francisco Angulo de Lafuente",
+      "last_commit": "06531c3",
+      "last_author": "Francisco Angulo de Lafuente",
+      "attribution_status": "visible_author_present_preserved",
+      "decision": "Paper source preserved; visible author name present, ORCID absent; citation metadata carries ORCID."
+    },
+    {
+      "path": "CITATION.cff",
+      "git_mode": "100644",
+      "original_blob_oid": "251bc108e5a99c1e8241aad42a70212be3ff7b48",
+      "original_sha256": "f1f3453ab26052ace86bca8bd61f5589a40f887e289815fb4142584d85cdc646",
+      "original_bytes": 697,
+      "first_commit": "7ba5d07",
+      "first_author": "Francisco Angulo de Lafuente",
+      "last_commit": "7ba5d07",
+      "last_author": "Francisco Angulo de Lafuente",
+      "attribution_status": "attribution_added",
+      "decision": "Confirmed ORCID added; title/version/date/URL/license preserved; pre-existing empty, unverified DOI placeholder removed because it fails CFF 1.2.0 validation."
+    },
+    {
+      "path": "ECOSYSTEM.md",
+      "git_mode": "100644",
+      "original_blob_oid": "7cdbf994e0a044364830a75538a01a67959a55c0",
+      "original_sha256": "c7109558be934b9820afd785bde6ead9695de9226645490416b125e866d47d63",
+      "original_bytes": 6370,
+      "first_commit": "ba25f05",
+      "first_author": "CAJAL Bot",
+      "last_commit": "ba25f05",
+      "last_author": "CAJAL Bot",
+      "attribution_status": "bot_authored_preserved",
+      "decision": "Git history attributes this file to a bot, not Francisco."
+    },
+    {
+      "path": "Imagen_test10.jpg",
+      "git_mode": "100644",
+      "original_blob_oid": "5e726ae47360c57e5bd5f330533fde39bdb6932d",
+      "original_sha256": "c49b9a2e7a4a35afff1a95f1f54ca86e95ef892f8f550ccc9a9eccce46b7a595",
+      "original_bytes": 52188,
+      "first_commit": "2d7afb8",
+      "first_author": "Francisco Angulo de Lafuente",
+      "last_commit": "2d7afb8",
+      "last_author": "Francisco Angulo de Lafuente",
+      "attribution_status": "source_rights_unresolved_preserved",
+      "decision": "Preserved pending source/rights review; no new authorship or license claim."
+    },
+    {
+      "path": "Imagen_test10_rsw.jpg",
+      "git_mode": "100644",
+      "original_blob_oid": "ea6f2810e04a66f0acc2b05d387f94fb025277fa",
+      "original_sha256": "96c59a278256facf0c630d9e141aa3163f61c1bf8a6b45c24026d0aff5ac8b6c",
+      "original_bytes": 30434,
+      "first_commit": "2d7afb8",
+      "first_author": "Francisco Angulo de Lafuente",
+      "last_commit": "2d7afb8",
+      "last_author": "Francisco Angulo de Lafuente",
+      "attribution_status": "source_rights_unresolved_preserved",
+      "decision": "Preserved pending source/rights review; no new authorship or license claim."
+    },
+    {
+      "path": "Imagen_test10_rsw_damaged.jpg",
+      "git_mode": "100644",
+      "original_blob_oid": "54f3d62b4f886562dc93e4854873132084c6d8c7",
+      "original_sha256": "c9b553dbad538c703f43c4f0ce2a1a8a050fac6337f533035edb13e870412a67",
+      "original_bytes": 29783,
+      "first_commit": "2d7afb8",
+      "first_author": "Francisco Angulo de Lafuente",
+      "last_commit": "2d7afb8",
+      "last_author": "Francisco Angulo de Lafuente",
+      "attribution_status": "source_rights_unresolved_preserved",
+      "decision": "Preserved pending source/rights review; no new authorship or license claim."
+    },
+    {
+      "path": "LICENSE",
+      "git_mode": "100644",
+      "original_blob_oid": "6b6ab2d06c257064813b7b72f11780ffebee1046",
+      "original_sha256": "afa3de7e3edd0ad130afc2f31d1f8dbc0a4bda40899f7ecce9c032310e4701c5",
+      "original_bytes": 1085,
+      "first_commit": "7ba5d07",
+      "first_author": "Francisco Angulo de Lafuente",
+      "last_commit": "7ba5d07",
+      "last_author": "Francisco Angulo de Lafuente",
+      "attribution_status": "existing_license_preserved",
+      "decision": "Existing MIT license and copyright notice preserved byte-for-byte."
+    },
+    {
+      "path": "Originals/Imagen_test3.png",
+      "git_mode": "100644",
+      "original_blob_oid": "775d3fd9763ec43b95c51d7ea75c7673ed1b5732",
+      "original_sha256": "e2d94b93cdf1bc10fcea47a18f9a16637ae4aeae6fb0ae7638b6182b18af36fd",
+      "original_bytes": 345405,
+      "first_commit": "2d7afb8",
+      "first_author": "Francisco Angulo de Lafuente",
+      "last_commit": "2d7afb8",
+      "last_author": "Francisco Angulo de Lafuente",
+      "attribution_status": "source_rights_unresolved_preserved",
+      "decision": "Preserved pending source/rights review; no new authorship or license claim."
+    },
+    {
+      "path": "Originals/Imagen_test4.png",
+      "git_mode": "100644",
+      "original_blob_oid": "775d3fd9763ec43b95c51d7ea75c7673ed1b5732",
+      "original_sha256": "e2d94b93cdf1bc10fcea47a18f9a16637ae4aeae6fb0ae7638b6182b18af36fd",
+      "original_bytes": 345405,
+      "first_commit": "2d7afb8",
+      "first_author": "Francisco Angulo de Lafuente",
+      "last_commit": "2d7afb8",
+      "last_author": "Francisco Angulo de Lafuente",
+      "attribution_status": "source_rights_unresolved_preserved",
+      "decision": "Preserved pending source/rights review; no new authorship or license claim."
+    },
+    {
+      "path": "README.md",
+      "git_mode": "100644",
+      "original_blob_oid": "a9f00231f1933f97cedd0fcdda778500c7e7468b",
+      "original_sha256": "5f6022c1e669b74277b0d2c5d3211358717a13c707520188ab81173ea83feb7d",
+      "original_bytes": 16228,
+      "first_commit": "c774ace",
+      "first_author": "Francisco Angulo de Lafuente",
+      "last_commit": "7fe1b4a",
+      "last_author": "CAJAL Bot",
+      "attribution_status": "attribution_added",
+      "decision": "Project author credit with explicit CAJAL Bot boundary."
+    },
+    {
+      "path": "RELEASE_NOTES.md",
+      "git_mode": "100644",
+      "original_blob_oid": "b2f9305e2afc3b5147641a6cfa9c9a6f760d8d25",
+      "original_sha256": "b5758eb53cdf1e7df7a9709ad603da3a7e9677f545cf11860da7cfa1e74b9e38",
+      "original_bytes": 615,
+      "first_commit": "147e69b",
+      "first_author": "Francisco Angulo de Lafuente",
+      "last_commit": "147e69b",
+      "last_author": "Francisco Angulo de Lafuente",
+      "attribution_status": "attribution_added",
+      "decision": "Additive author/copyright/ORCID/SPDX header; original body preserved."
+    },
+    {
+      "path": "Robust ASIC-Based Image Authentication Using Reed-Solomon LSB Watermarking.pdf",
+      "git_mode": "100644",
+      "original_blob_oid": "5c89b0d4fef2feecd5c27f0340a826f2f7339717",
+      "original_sha256": "f217de34bbdc6cce43a906fe63730e4281692da05e0548a25468adccd4fc35a2",
+      "original_bytes": 404677,
+      "first_commit": "dc8f7fe",
+      "first_author": "Francisco Angulo de Lafuente",
+      "last_commit": "dc8f7fe",
+      "last_author": "Francisco Angulo de Lafuente",
+      "attribution_status": "source_rights_unresolved_preserved",
+      "decision": "Preserved pending source/rights review; no new authorship or license claim."
+    },
+    {
+      "path": "SECURITY.md",
+      "git_mode": "100644",
+      "original_blob_oid": "f8e0082d2b490d294bf246b5dca956a3b3f4bb79",
+      "original_sha256": "81e32cc215cd6fae0e985cd4ab5df04695af76c4b9b910a2765d71b44a6961cd",
+      "original_bytes": 845,
+      "first_commit": "a92074e",
+      "first_author": "Francisco Angulo de Lafuente",
+      "last_commit": "a92074e",
+      "last_author": "Francisco Angulo de Lafuente",
+      "attribution_status": "attribution_added",
+      "decision": "Additive author/copyright/ORCID/SPDX header; original body preserved."
+    },
+    {
+      "path": "SILICON_AUTH_HANDBOOK.md",
+      "git_mode": "100644",
+      "original_blob_oid": "30341623d8f7feb6d9e540e321e88a6a5b3085b2",
+      "original_sha256": "6819da0ff2ab1b357c2c8d54a0cd11ac87b3aa559c97044a153c54202d8874a9",
+      "original_bytes": 3531,
+      "first_commit": "2d7afb8",
+      "first_author": "Francisco Angulo de Lafuente",
+      "last_commit": "2d7afb8",
+      "last_author": "Francisco Angulo de Lafuente",
+      "attribution_status": "attribution_added",
+      "decision": "Additive author/copyright/ORCID/SPDX header; original body preserved."
+    },
+    {
+      "path": "SILICON_MANIFESTO.md",
+      "git_mode": "100644",
+      "original_blob_oid": "71ce6b126d27d30925aafa6eb3e2b0079eea14d0",
+      "original_sha256": "7aab4bbecd8d615275816db51bf9212ceaafac64774f0b7b78f5f23438d593f4",
+      "original_bytes": 2086,
+      "first_commit": "2d7afb8",
+      "first_author": "Francisco Angulo de Lafuente",
+      "last_commit": "2d7afb8",
+      "last_author": "Francisco Angulo de Lafuente",
+      "attribution_status": "attribution_added",
+      "decision": "Additive author/copyright/ORCID/SPDX header; original body preserved."
+    },
+    {
+      "path": "Secure_image_generation_with_ASIC_signature.html",
+      "git_mode": "100644",
+      "original_blob_oid": "905f3090a604a80d9f9d20b26b5facbfeb1a77c7",
+      "original_sha256": "fb5606c2d707a4ecb368615c806d99eded4d29f8b4d2daceb15a05ea43c410a0",
+      "original_bytes": 25577,
+      "first_commit": "2d7afb8",
+      "first_author": "Francisco Angulo de Lafuente",
+      "last_commit": "dc8f7fe",
+      "last_author": "Francisco Angulo de Lafuente",
+      "attribution_status": "visible_author_present_preserved",
+      "decision": "Paper source preserved; visible author name present, ORCID absent; citation metadata carries ORCID."
+    },
+    {
+      "path": "asic_auth_portal.py",
+      "git_mode": "100644",
+      "original_blob_oid": "217b1f58711fb608605d05be9fd3d8d9978bfa96",
+      "original_sha256": "e2ef91e2a04ad5c2350a9cd93780d6ddcf0c3461cc8876df080bb2a9eaf656f4",
+      "original_bytes": 1853,
+      "first_commit": "2d7afb8",
+      "first_author": "Francisco Angulo de Lafuente",
+      "last_commit": "2d7afb8",
+      "last_author": "Francisco Angulo de Lafuente",
+      "attribution_status": "attribution_added",
+      "decision": "Additive author/copyright/ORCID/SPDX header; original body preserved."
+    },
+    {
+      "path": "benchmarks/run_benchmarks.py",
+      "git_mode": "100644",
+      "original_blob_oid": "341c924560b55b4cdb3b04b0b32917fa06d8290b",
+      "original_sha256": "aaa225294ef0e57eda8f72c900665c2729ab6981f11b289d44cb6e4e50f854af",
+      "original_bytes": 2388,
+      "first_commit": "442857d",
+      "first_author": "Francisco Angulo de Lafuente",
+      "last_commit": "442857d",
+      "last_author": "Francisco Angulo de Lafuente",
+      "attribution_status": "attribution_added",
+      "decision": "Additive author/copyright/ORCID/SPDX header; original body preserved."
+    },
+    {
+      "path": "dataset/README.md",
+      "git_mode": "100644",
+      "original_blob_oid": "39a6d9d2085195ef6cff61abe21b0d6333fcd46f",
+      "original_sha256": "6a4533cbe93dc6e01b6251304fe96365fc4fb5c984e32e2c252554167bfef3ec",
+      "original_bytes": 932,
+      "first_commit": "7ba5d07",
+      "first_author": "Francisco Angulo de Lafuente",
+      "last_commit": "e342e99",
+      "last_author": "Francisco Angulo de Lafuente",
+      "attribution_status": "attribution_added",
+      "decision": "README author credited; CC BY 4.0 designation preserved; media provenance/rights unresolved."
+    },
+    {
+      "path": "docs/PUBLISH.md",
+      "git_mode": "100644",
+      "original_blob_oid": "eedb334ef8fde1958600e660937a09cb02ed76d7",
+      "original_sha256": "8b9caf688a4c988b49f01b5622d53eb4ffb8ab2738d70132c828a3284c7ed093",
+      "original_bytes": 2013,
+      "first_commit": "2013166",
+      "first_author": "Francisco Angulo de Lafuente",
+      "last_commit": "2013166",
+      "last_author": "Francisco Angulo de Lafuente",
+      "attribution_status": "attribution_added",
+      "decision": "Additive author/copyright/ORCID/SPDX header; original body preserved."
+    },
+    {
+      "path": "drivers/asic_interface.py",
+      "git_mode": "100644",
+      "original_blob_oid": "8c388d1bbaa3a4f306ffed658c965e156e6a66f1",
+      "original_sha256": "93b18dffcd5bbea82f59fe5b5598c76cd16a32098041e5dacdc9dcb770131524",
+      "original_bytes": 26280,
+      "first_commit": "2d7afb8",
+      "first_author": "Francisco Angulo de Lafuente",
+      "last_commit": "2d7afb8",
+      "last_author": "Francisco Angulo de Lafuente",
+      "attribution_status": "attribution_added",
+      "decision": "Additive author/copyright/ORCID/SPDX header; original body preserved."
+    },
+    {
+      "path": "drivers/config.py",
+      "git_mode": "100644",
+      "original_blob_oid": "db344e212c024c1cd074ce84b87373b66e39eed0",
+      "original_sha256": "d4cec07a3ece2842aa2015fb53ad33e0059b79f27298e88c1c67c02e380504cf",
+      "original_bytes": 9609,
+      "first_commit": "2d7afb8",
+      "first_author": "Francisco Angulo de Lafuente",
+      "last_commit": "2d7afb8",
+      "last_author": "Francisco Angulo de Lafuente",
+      "attribution_status": "attribution_added",
+      "decision": "Additive author/copyright/ORCID/SPDX header; original body preserved."
+    },
+    {
+      "path": "drivers/s9_dual_bridge.py",
+      "git_mode": "100644",
+      "original_blob_oid": "522180c468eb2ba4a08a104bbd4a4a32fafba87a",
+      "original_sha256": "db8be71afff7b1c9c0c5a68393a22b8f7f4a88d31aff7f09f8f90c5dcbf264df",
+      "original_bytes": 8630,
+      "first_commit": "2d7afb8",
+      "first_author": "Francisco Angulo de Lafuente",
+      "last_commit": "2d7afb8",
+      "last_author": "Francisco Angulo de Lafuente",
+      "attribution_status": "attribution_added",
+      "decision": "Additive author/copyright/ORCID/SPDX header; original body preserved."
+    },
+    {
+      "path": "manual_png_check.py",
+      "git_mode": "100644",
+      "original_blob_oid": "7f69bc19692a27ed853cc221d61265954a09e855",
+      "original_sha256": "54f0830d0af790c43f5081dd53243c15658ffb03fc949fc8d1aaf2965e0d105a",
+      "original_bytes": 1375,
+      "first_commit": "2d7afb8",
+      "first_author": "Francisco Angulo de Lafuente",
+      "last_commit": "2d7afb8",
+      "last_author": "Francisco Angulo de Lafuente",
+      "attribution_status": "attribution_added",
+      "decision": "Additive author/copyright/ORCID/SPDX header; original body preserved."
+    },
+    {
+      "path": "proofs/comparison_720p_v3.csv",
+      "git_mode": "100644",
+      "original_blob_oid": "6b8c90acd2bf84a3954796a4e172b910ff7b864b",
+      "original_sha256": "1f7603d04df1bde3c99170bde2bdfe77cf5c0a47fb894babfd6c89d896edc4c1",
+      "original_bytes": 287,
+      "first_commit": "2d7afb8",
+      "first_author": "Francisco Angulo de Lafuente",
+      "last_commit": "2d7afb8",
+      "last_author": "Francisco Angulo de Lafuente",
+      "attribution_status": "source_rights_unresolved_preserved",
+      "decision": "Preserved pending source/rights review; no new authorship or license claim."
+    },
+    {
+      "path": "proofs/silicon_tv_v4_auth.png",
+      "git_mode": "100644",
+      "original_blob_oid": "1b76a315cb186f93141997be20d98c23e2dbdedd",
+      "original_sha256": "75099356cdfc76a853e1268c0e5e1b1f647a7334c05d47b2611ffdb77b3c2c43",
+      "original_bytes": 706,
+      "first_commit": "2d7afb8",
+      "first_author": "Francisco Angulo de Lafuente",
+      "last_commit": "2d7afb8",
+      "last_author": "Francisco Angulo de Lafuente",
+      "attribution_status": "source_rights_unresolved_preserved",
+      "decision": "Preserved pending source/rights review; no new authorship or license claim."
+    },
+    {
+      "path": "silicon_fog_analyzer.py",
+      "git_mode": "100644",
+      "original_blob_oid": "fcb77f1d02f9b1d3672bab3d8a79c4d04a2781ef",
+      "original_sha256": "35ddc3f5a59c23fbcf3840abb3a652842aea1f4febb1f6d26f80ddba5dc8e81d",
+      "original_bytes": 1568,
+      "first_commit": "2d7afb8",
+      "first_author": "Francisco Angulo de Lafuente",
+      "last_commit": "2d7afb8",
+      "last_author": "Francisco Angulo de Lafuente",
+      "attribution_status": "attribution_added",
+      "decision": "Additive author/copyright/ORCID/SPDX header; original body preserved."
+    },
+    {
+      "path": "silicon_fog_v4_session.py",
+      "git_mode": "100644",
+      "original_blob_oid": "dd71e9f0f7753ae059758c87b1c1eae769d98507",
+      "original_sha256": "2ce59e16aa58f89ffe99f6e71c6c0b06c7344c85f7089bf6cd55e66438f0c55d",
+      "original_bytes": 6111,
+      "first_commit": "2d7afb8",
+      "first_author": "Francisco Angulo de Lafuente",
+      "last_commit": "2d7afb8",
+      "last_author": "Francisco Angulo de Lafuente",
+      "attribution_status": "attribution_added",
+      "decision": "Additive author/copyright/ORCID/SPDX header; original body preserved."
+    },
+    {
+      "path": "silicon_rs_watermark.py",
+      "git_mode": "100644",
+      "original_blob_oid": "9fea5bb7ba82c03d7cce8693c54846af031b94d9",
+      "original_sha256": "578ffcfad779fe290063a6ca52bbeae0713838fb049930649409d790fd6469d9",
+      "original_bytes": 9174,
+      "first_commit": "2d7afb8",
+      "first_author": "Francisco Angulo de Lafuente",
+      "last_commit": "2d7afb8",
+      "last_author": "Francisco Angulo de Lafuente",
+      "attribution_status": "attribution_added",
+      "decision": "Additive author/copyright/ORCID/SPDX header; original body preserved."
+    },
+    {
+      "path": "silicon_signature_engine.py",
+      "git_mode": "100644",
+      "original_blob_oid": "3cb9f463726226b870afd338f6b2813b96284b4f",
+      "original_sha256": "7aec7a35f2be4bce0ffdbf6cc120ae0d1456907db66b0d508d3dcfcedafffa79",
+      "original_bytes": 3072,
+      "first_commit": "2d7afb8",
+      "first_author": "Francisco Angulo de Lafuente",
+      "last_commit": "2d7afb8",
+      "last_author": "Francisco Angulo de Lafuente",
+      "attribution_status": "attribution_added",
+      "decision": "Additive author/copyright/ORCID/SPDX header; original body preserved."
+    },
+    {
+      "path": "simulate_damage.py",
+      "git_mode": "100644",
+      "original_blob_oid": "58c1060d9a89d118c61389b0c5db624aa3b4e592",
+      "original_sha256": "60e8bcd63cb48085b795a0e4c50a34b5f633354d7fa056a0b744a2307a0b321f",
+      "original_bytes": 951,
+      "first_commit": "2d7afb8",
+      "first_author": "Francisco Angulo de Lafuente",
+      "last_commit": "2d7afb8",
+      "last_author": "Francisco Angulo de Lafuente",
+      "attribution_status": "attribution_added",
+      "decision": "Additive author/copyright/ORCID/SPDX header; original body preserved."
+    },
+    {
+      "path": "tools/package_dataset.ps1",
+      "git_mode": "100644",
+      "original_blob_oid": "4f50f2c47905ec54e87211c073dffd74205a4587",
+      "original_sha256": "a085d9991ab6425b81a14d18470a2461715790a353ed5b3c6cbeaf0017c4693c",
+      "original_bytes": 1221,
+      "first_commit": "7ba5d07",
+      "first_author": "Francisco Angulo de Lafuente",
+      "last_commit": "7ba5d07",
+      "last_author": "Francisco Angulo de Lafuente",
+      "attribution_status": "attribution_added",
+      "decision": "Additive author/copyright/ORCID/SPDX header; original body preserved."
+    },
+    {
+      "path": "tools/scan_secrets.py",
+      "git_mode": "100644",
+      "original_blob_oid": "1e3ce511208e4ef85e30abdca5cac45f805726e0",
+      "original_sha256": "a2ef10308711bd8ed8d5bb9a4a7d497bc7bb7b57254c48276b9c07f180f67f29",
+      "original_bytes": 1327,
+      "first_commit": "a92074e",
+      "first_author": "Francisco Angulo de Lafuente",
+      "last_commit": "a92074e",
+      "last_author": "Francisco Angulo de Lafuente",
+      "attribution_status": "attribution_added",
+      "decision": "Additive author/copyright/ORCID/SPDX header; original body preserved."
+    },
+    {
+      "path": "tools/upload_to_hf.py",
+      "git_mode": "100644",
+      "original_blob_oid": "310d29619d7fd65abac41cd152b8f9564edba035",
+      "original_sha256": "4b8f1c76e094a0e25661794264a25bc9e3833dc20aae40e19a2b5e80071dfc56",
+      "original_bytes": 1428,
+      "first_commit": "2597ed7",
+      "first_author": "Francisco Angulo de Lafuente",
+      "last_commit": "2597ed7",
+      "last_author": "Francisco Angulo de Lafuente",
+      "attribution_status": "attribution_added",
+      "decision": "Additive author/copyright/ORCID/SPDX header; original body preserved."
+    },
+    {
+      "path": "tools/upload_to_wandb.py",
+      "git_mode": "100644",
+      "original_blob_oid": "343ff6d50523d3ce80e0e954e0a4c47dc2ae2507",
+      "original_sha256": "2d55a55f4d62b3ba8da1f0d9471ba2b4e21e6bad6c9d156091792f05d3a8dcfe",
+      "original_bytes": 1484,
+      "first_commit": "851c74a",
+      "first_author": "Francisco Angulo de Lafuente",
+      "last_commit": "851c74a",
+      "last_author": "Francisco Angulo de Lafuente",
+      "attribution_status": "attribution_added",
+      "decision": "Additive author/copyright/ORCID/SPDX header; original body preserved."
+    },
+    {
+      "path": "verify_silicon_art.py",
+      "git_mode": "100644",
+      "original_blob_oid": "b0848b0e56e02506b84c6265e6b7d6d396f7483c",
+      "original_sha256": "caef8d114db0df964188aa7efef70cf2346230bbef42bd6106e6b12807434d9a",
+      "original_bytes": 3545,
+      "first_commit": "2d7afb8",
+      "first_author": "Francisco Angulo de Lafuente",
+      "last_commit": "2d7afb8",
+      "last_author": "Francisco Angulo de Lafuente",
+      "attribution_status": "attribution_added",
+      "decision": "Additive author/copyright/ORCID/SPDX header; original body preserved."
+    },
+    {
+      "path": "zenodo.json",
+      "git_mode": "100644",
+      "original_blob_oid": "84bbc73de7891203c0cc07c45693283b95b5e2da",
+      "original_sha256": "937f803f0fbc325bb482ecc19bc74b6cced16a7b8f3f4154074dfa05e3644858",
+      "original_bytes": 497,
+      "first_commit": "074b076",
+      "first_author": "Francisco Angulo de Lafuente",
+      "last_commit": "074b076",
+      "last_author": "Francisco Angulo de Lafuente",
+      "attribution_status": "sidecar_only",
+      "decision": "Preserved; authorship and original blob fingerprint recorded here."
+    }
+  ],
+  "citation_note": "No DOI is verified; the empty placeholder from the baseline citation was removed rather than replaced with an inferred DOI."
+}

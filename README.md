@@ -1,3 +1,13 @@
+<!--
+Project: Secure Image Generation with ASIC Signature
+Author: Francisco Angulo de Lafuente
+ORCID: https://orcid.org/0009-0001-1634-7063
+Copyright: 2026 Francisco Angulo de Lafuente
+Recorded on: 2026-11-05
+Attribution scope: Original project research and documentation; later ecosystem-navigation content includes CAJAL Bot contributions recorded in Git history.
+License scope: MIT for verified first-party source and documentation; dataset, paper, media, and bot-authored content are not granted new scope here.
+-->
+
 # <div align="center">🔏 SiliconSignature</div>
 
 <div align="center">
@@ -20,6 +30,9 @@
 [![Browser](https://img.shields.io/badge/Browser-Extension-4285F4.svg?style=flat-square&logo=google-chrome)](https://github.com/Agnuxo1/silicon-browser-extension)
 
 </div>
+
+
+<p align="center"><strong>Original project author:</strong> <a href="https://orcid.org/0009-0001-1634-7063">Francisco Angulo de Lafuente</a></p>
 
 ---
 
@@ -79,6 +92,9 @@
 ---
 
 ## 🏗️ Ecosystem
+
+
+> The later ecosystem-navigation update in this README was authored by CAJAL Bot (commit 7fe1b4a). The separate ECOSYSTEM.md index was added by the same bot (commit ba25f05).
 
 This repository is the **central hub** — the original Python implementation + research paper. The ecosystem extends across 8 specialized repositories:
 
@@ -325,6 +341,11 @@ Please use the `CITATION.cff` file in this repository or cite as:
 ## 📝 License
 
 [MIT License](LICENSE) © 2026 Francisco Angulo de Lafuente
+
+
+For verified first-party code and project documentation, this project contains open-source material under the MIT License. When redistributing copies or substantial portions, retain the copyright and permission notices. If you build on this work, please cite the project and credit Francisco Angulo de Lafuente (ORCID: 0009-0001-1634-7063). Help advance scientific knowledge: we welcome reproducible results, corrections, and contributions.
+
+The MIT scope covers verified first-party software and documentation. The dataset is separately designated CC BY 4.0 in dataset/README.md; source and rights for included images and proof artifacts remain unresolved.
 
 ---
 

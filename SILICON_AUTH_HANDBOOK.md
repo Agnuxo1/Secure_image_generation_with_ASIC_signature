@@ -1,4 +1,15 @@
+<!--
+Project: Secure Image Generation with ASIC Signature
+Author: Francisco Angulo de Lafuente
+ORCID: https://orcid.org/0009-0001-1634-7063
+Copyright: 2026 Francisco Angulo de Lafuente
+Recorded on: 2026-11-05
+SPDX-License-Identifier: MIT
+-->
+
 # Silicon TV: 720p Scaling & Proof-of-Art Walkthrough
+
+**Author:** [Francisco Angulo de Lafuente](https://orcid.org/0009-0001-1634-7063)
 
 This walkthrough documents the successful scaling of the Silicon TV "Fog Dissipation" engine to HD resolution, the comparative benchmark against CPU, and the implementation of a cryptographic ASIC signature system.
 
@@ -62,3 +73,5 @@ We simulated vandalism by painting glasses and a mustache on a signed image and 
 - [Signature Engine](file:///D:/ASIC-ANTMINER_S9/ASIC_DIFFUSION_Art_Research_Memo/silicon_signature_engine.py)
 - [Verifier](file:///D:/ASIC-ANTMINER_S9/ASIC_DIFFUSION_Art_Research_Memo/verify_silicon_art.py)
 - [RS Watermark Engine](file:///D:/ASIC-ANTMINER_S9/ASIC_DIFFUSION_Art_Research_Memo/Secure_image_generation_with_ASIC_signature/silicon_rs_watermark.py)
+
+**Citation and reuse:** Cite the project through CITATION.cff; see LICENSE and provenance.json for the applicable scope.

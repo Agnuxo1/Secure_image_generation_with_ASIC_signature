@@ -1,12 +1,18 @@
+# Project: Secure Image Generation with ASIC Signature
+# Author: Francisco Angulo de Lafuente
+# ORCID: https://orcid.org/0009-0001-1634-7063
+# Copyright (c) 2026 Francisco Angulo de Lafuente
+# Recorded on: 2026-11-05
+# SPDX-License-Identifier: MIT (software citation metadata only)
+
 cff-version: 1.2.0
-message: "If you use this software or dataset, please cite it as below."
+message: "If you use this software, cite it as below. Dataset files have a separate CC BY 4.0 designation; see dataset/README.md."
 title: "Secure Image Generation with ASIC Signature"
 version: "v1.0.0"
-doi: ""
 authors:
   - family-names: "Angulo de Lafuente"
     given-names: "Francisco"
-    orcid: ""
+    orcid: "https://orcid.org/0009-0001-1634-7063"
     affiliation: "Independent Researcher, Spain"
 date-released: "2026-01-14"
 url: "https://github.com/Agnuxo1/Secure_image_generation_with_ASIC_signature"

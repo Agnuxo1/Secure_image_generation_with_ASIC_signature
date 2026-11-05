@@ -1,4 +1,15 @@
+<!--
+Project: Secure Image Generation with ASIC Signature
+Author: Francisco Angulo de Lafuente
+ORCID: https://orcid.org/0009-0001-1634-7063
+Copyright: 2026 Francisco Angulo de Lafuente
+Recorded on: 2026-11-05
+SPDX-License-Identifier: MIT
+-->
+
 Publishing and archiving guide
+
+**Author:** [Francisco Angulo de Lafuente](https://orcid.org/0009-0001-1634-7063)
 
 This document explains how to publish code, paper and dataset artifacts to several platforms.
 
@@ -34,3 +45,5 @@ This document explains how to publish code, paper and dataset artifacts to sever
  - Paper: CC-BY preferred for open access.
 
 If you want, I can perform the uploads on your behalf (I will need API tokens) or prepare CI to do automated uploads. Let me know which platforms to prioritize and whether you prefer manual approvals before uploads.
+
+**Citation and reuse:** Cite the project through CITATION.cff; see LICENSE and provenance.json for the applicable scope.

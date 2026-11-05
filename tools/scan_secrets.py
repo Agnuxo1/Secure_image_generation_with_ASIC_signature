@@ -1,4 +1,11 @@
 #!/usr/bin/env python3
+# Project: Secure Image Generation with ASIC Signature
+# Author: Francisco Angulo de Lafuente
+# ORCID: https://orcid.org/0009-0001-1634-7063
+# Copyright (c) 2026 Francisco Angulo de Lafuente
+# Recorded on: 2026-11-05
+# SPDX-License-Identifier: MIT
+
 """Basic repository secrets scanner (heuristic).
 Searches for high-entropy strings and common secret keywords in tracked files.
 """
